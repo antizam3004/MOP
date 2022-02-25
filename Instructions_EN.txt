@@ -1,17 +1,17 @@
 ﻿-Instructions
 
-For app to launch first you need to open project in IntelliJ IDEA progran. After that let maven download all dependencies.
+For app to launch first you need to open project in IntelliJ IDEA program. After that let maven download all dependencies.
 
-You need to have Postgres installed. In postgres create the database called "requests". Username and password data are stored in application.properties. If postgres is not at localhost or at port 5432, you need tochange that either at the same fiel.In resources folder there is schema.sql file which will create table during app launch, if the database has been created
+You need to have Postgres installed. In postgres create the database called "requests". Username and password data are stored in application.properties. If postgres is not at localhost or at port 5432, you need to change that also at the same file. In resources folder there is schema.sql file which will create table during app launch, if the database has been created
 
 
-Application tuns on Tomcat server at port 8080.
+Application runs on Tomcat server at port 8080.
 
 
 
 There are two endpoints:
 
-/productPrices - gets data from urls that are inside code, then after calculations and after database data import the result is returned at the same page
+/productPrices - gets data from urls that are inside code, then after all the calculations and after database imports data, the result is returned at the same page
 
 /responseTimeStatistics - which prints data from database in combined form
 
