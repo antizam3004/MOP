@@ -1,0 +1,19 @@
+﻿-Upute-
+
+Za pokretanje aplikacije otvoriti projekt u programu IntelliJ IDEA. Nakon pokretanja pustiti Maven da skine sve dependency-e.
+
+
+Potrebno je imati instaliran Postgres. U njemu kreirati bazu requests. Podaci za username i password se nalaze u application.properties. Ako postgres nije na localhostu ili na portu 5432, potrebno i to izmjeniti u istoj datoteci. Npr ako je instaliran postgres preko dockera na windowsu,moguće da postgres nije na localhostu.U resources folderu se nalazi schema.sql koja će kreirati tablicu pri pokretanju aplikacije, ako je kreirana baza.
+
+
+Aplikacija se vrti na Tomcatu na portu 8080.
+
+
+
+Postoje dva endpointa:
+
+/productPrices - kupi podatke sa zadanih url-ova te nakon kalkulacija i upisa u bazu vraća rezultat na istu stranicu
+
+/responseTimeStatistics - koji ispisuje podatke iz baze u kombiniranom obliku 
+
+
